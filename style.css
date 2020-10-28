@@ -1,0 +1,149 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+  overflow:hidden;
+}
+body{
+	font-size:16px;
+	font-family:PT Sans, sans-serif;
+	text-align:center;
+	background-color:rgb(18, 8, 81);
+}
+.center{
+  display:flex;
+  justify-content:center; 
+  align-items:center;
+  min-height:100vh;
+}
+.colors{
+  position: fixed; 
+  background:rgb(9, 43, 101); 
+  width:100%;
+  bottom:0;
+  z-index: 1;
+}
+.buttons{
+  font-family:PT Sans, Helvetica, Sans-Serif;
+	width:60px;
+  transition:all 1.3s ease;
+  outline:none;
+	height:40px;
+	cursor: pointer;
+	margin:6px;
+	border-radius:6px;
+	border:3px solid rgb(10, 10, 10);
+}
+.exit{
+  font-family:PT Sans, Helvetica, Sans-Serif;
+  transition:all 1s ease;
+  font-size: 2em;
+  padding: 0.2em;
+  line-height: 1em;
+  outline:none;
+  border:none;
+	cursor: pointer;
+  background-color:rgb(120, 0, 150);
+  color: rgb(0, 0, 0);
+	border-radius:0px 0px 9px 9px;
+  margin: 0 auto;
+  width:100%;
+
+}
+.exit:hover{
+  background-color:rgb(180, 30, 210);
+}
+
+.buttons:hover{
+	border:3px solid white;
+  transition:all 0.5s ease;
+}
+#white{
+  background-color: white;
+}
+#black{
+  background-color: black;
+}
+#red{
+  background-color: red;
+}
+#blue{
+  background-color: blue;
+}
+canvas{
+  position:absolute;
+  top:100px;
+  left:100px;
+  z-index: -1;
+}
+h1{
+  color: black; 
+  font-size:2em;
+}
+.settingsTab{
+  background: rgb(91, 19, 158);
+  width: 25rem;
+  height: 25rem;
+  border-radius:9px 9px 0px 0px;
+}
+.dim{
+  font-family:PT Sans, Helvetica, Sans-Serif;
+  width: 30%;
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+}
+header{
+  z-index: 1;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:8vh;
+	background:rgb(9, 43, 101);
+	display: flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+canvas{
+	background:white;
+}
+.container{
+	width:100vw;
+	height:100vh;
+	padding:5px;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+span{
+	font-size:2rem;
+  color:white;
+	margin:15px;
+	cursor:pointer;
+	padding:0px;
+	height:100%;
+	transition:all 0.3s linear;
+}
+.icon{
+	position:absolute;
+	left:0;
+  transition:all 0.5s linear;
+}
+.icon:hover{
+	color:black;
+}
+.settings{
+  margin: 5px;
+  font-family:PT Sans, Helvetica, Sans-Serif;
+  height: 100%;
+  font-size:2rem;
+  border:none;
+  outline:none;
+  padding: 0.1rem;
+  color:white;
+	padding-top:0rem;
+}
+header span:hover{
+  color:rgb(225, 127, 253);
+}

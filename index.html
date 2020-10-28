@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">		
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+			<span class="icon">Map Maker</span>
+  		<span class="settings" id="import">Import</span>
+	  	<span class="settings" id="export">Export</span>
+      <span class="settings" id="settings">Settings</span>
+    </header>
+    <div class="center">
+    <div id="settingsTab" style="display:none">
+    <div class="settingsTab">
+      <div>
+        <h1 style="color:white">Settings</h1>
+        <h3 style="color:rgb(255, 200, 200);">WARNING</h3>
+        <h5 style="color:rgb(255, 200, 200);">Changing dimensions of map will REMOVE YOUR PROGRESS!<h5>
+      </div>
+      <div>
+        <h2>Dimensions</h2>
+        <h5>Maximum 150</h5>
+        <div>
+          <input class="dim" type="number" placeholder="Enter Width" max="150" id="width"></input>
+        </div>
+        <div>
+          <input class="dim" type="number" placeholder="Enter Height" max="150" id="height"></input>
+        </div>
+      </div>
+    </div>
+    <div>
+    <button class="exit" id="return">Save</button>
+    </div>
+    </div>
+
+
+    </div>
+    <div class="colors">
+      <button class="buttons" id="white"></button>
+      <button class="buttons" id="black"></button>
+      <button class="buttons" id="red"></button>
+      <button class="buttons" id="blue"></button>
+      
+    </div>
+			<canvas width=400; height=400; id="canvas"></canvas>
+    <script src="controller.js"></script>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  </body>
+</html>
